@@ -8,6 +8,10 @@ app.get('/',(req,res)=>{
 app.get("/custom",(req,res)=>{
     res.send("this is custom path");
 })
+
+app.get("feature",(req,res)=>{
+    res.send("here is the new feature path");
+})
 app.listen(port,()=>{
     console.log(`app is listening on ${port}`);
 })
